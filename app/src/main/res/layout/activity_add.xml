@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_q1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sdgp.kelum23.myserveyapp.AddActivity">
+
+    <Button
+        android:id="@+id/buttonSignout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_green_light"
+        android:text="Back"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:text="Question One Add Details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:id="@+id/textView3"
+        android:textStyle="normal|bold" android:textSize="24sp"
+        android:textAlignment="center" android:textColor="@color/colorAccent" android:layout_below="@+id/buttonSignout"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true" android:layout_marginTop="17dp" android:id="@+id/textView4"
+        android:text="1.Preliminary Information of location of household servey." android:textStyle="normal|bold"
+        android:textColor="@android:color/background_dark" android:textSize="18sp" android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_below="@+id/editTextNewInterviewerName" android:layout_alignParentStart="true" android:id="@+id/editTextNewDate"
+        android:hint="Date"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextNewInterviewerName"
+        android:hint="Interviewer Name" android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_below="@+id/editTextNewDate" android:layout_alignParentStart="true" android:id="@+id/editTextNewHomeAddress"
+        android:hint="Home Address"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+
+    <Spinner
+        android:id="@+id/spinnerNewDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNewHomeAddress"
+        android:entries="@array/district"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextNewDSD"
+        android:hint="DSD"
+        tools:ignore="HardcodedText"
+        android:layout_below="@+id/spinnerNewDistrict"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/editTextNewDSD" android:layout_alignParentStart="true" android:id="@+id/editTextNewGND"
+        android:hint="GND"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTextNewMobileNo" android:layout_below="@+id/editTextNewGND" android:layout_alignParentStart="true"
+        android:hint="Mobile No"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:text="add details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_below="@+id/editTextNewMobileNo"
+        android:id="@+id/buttonAdd" android:textStyle="normal|bold"
+        android:background="@color/colorPrimary" android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textViewSigninUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        tools:ignore="HardcodedText" />
+
+
+
+
+
+</RelativeLayout>

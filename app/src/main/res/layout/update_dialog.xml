@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <EditText
+        android:id="@+id/editTextNewInterviewerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView4"
+        android:ems="10"
+        android:hint="New Interviewer Name"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <EditText
+        android:id="@+id/editTextNewDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNewInterviewerName"
+        android:ems="10"
+        android:hint="New Date"
+        android:inputType="date"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <EditText
+        android:id="@+id/editTextNewHomeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNewDate"
+        android:ems="10"
+        android:hint="New Home Address"
+        android:inputType="textMultiLine"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Spinner
+        android:id="@+id/spinnerNewDistrict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNewHomeAddress"
+        android:entries="@array/district"
+        android:layout_alignParentLeft="true"
+        tools:ignore="ObsoleteLayoutParam" />
+
+    <EditText
+        android:id="@+id/editTextNewDSD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerNewDistrict"
+        android:ems="10"
+        android:hint="New DSD"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <EditText
+        android:id="@+id/editTextNewGND"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNewDSD"
+        android:ems="10"
+        android:hint="New GND"
+        android:inputType="textPersonName"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <EditText
+        android:id="@+id/editTextNewMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextNewGND"
+        android:ems="10"
+        android:hint="New Mobile No"
+        android:inputType="phone"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editTextNewMobileNo"
+        android:background="@color/colorPrimary"
+        android:text="Update Details"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        tools:ignore="HardcodedText,ObsoleteLayoutParam" />
+
+
+</LinearLayout>

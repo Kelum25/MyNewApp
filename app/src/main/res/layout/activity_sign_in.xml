@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sdgp.kelum23.myserveyapp.SignInActivity">
+
+    <TextView
+        android:text="SIGN IN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" android:layout_marginTop="13dp" android:id="@+id/textViewLogin"
+        android:textSize="24sp" android:textColor="@color/colorAccent" android:textStyle="normal|bold"
+        android:textAlignment="center" android:fontFamily="sans-serif"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:text="sign in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSignin"
+        android:textSize="24sp" android:textStyle="normal|bold" android:textAlignment="center"
+        android:background="@color/colorPrimary" android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" android:layout_marginBottom="56dp"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextEmail"
+        android:hint="Enter Your Registered Email" android:textSize="18sp"
+        android:textStyle="normal|bold" android:textAlignment="center"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/editTextPassword" android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editTextPassword" android:hint="Enter Your Password"
+        android:textAppearance="@android:style/TextAppearance.Small.Inverse"
+        android:textStyle="normal|bold" android:textAlignment="center"
+        android:layout_marginBottom="76dp"
+        android:textSize="18sp" android:layout_above="@+id/buttonSignin" android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

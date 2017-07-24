@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sdgp.kelum23.myserveyapp.OperationActivity">
+
+    <TextView
+        android:id="@+id/textViewSigninUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+        android:textSize="14sp"
+        android:textStyle="normal|bold"
+        tools:ignore="HardcodedText" />
+    <Button
+        android:text="sign out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSignout" android:layout_alignParentTop="true" android:layout_alignParentEnd="true"
+        android:background="@android:color/holo_red_light"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonSignout"
+        android:layout_marginTop="29dp"
+        android:text="Question One Operation"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/colorAccent"
+        android:textSize="24sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/buttonAddDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="@string/add_detail" />
+
+    <Button
+        android:id="@+id/buttonViewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonAddDetail"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="@string/view_detail" />
+
+    <Button
+        android:id="@+id/buttonUpdateDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonViewDetail"
+        android:layout_marginTop="21dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="@string/update_detail" />
+
+    <Button
+        android:id="@+id/buttonDeleteDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonUpdateDetail"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/holo_blue_bright"
+        android:text="@string/delete_detail" />
+
+    <Button
+        android:id="@+id/buttonGo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/buttonDeleteDetail"
+        android:layout_marginTop="26dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/back" />
+
+
+</RelativeLayout>
